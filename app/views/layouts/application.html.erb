@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Tuts</title>
+  <title><%= full_title(yield(:title)) %></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <%= favicon_link_tag 'fav.png' %>
 </head>
 <body>
 
 <%= yield %>
-
-<!-- <div id="intro">
-	<p class="footer">
-	    by <a href="https://twitter.com/AnshulG8">@AnshulG8</a> | <a href="mailto:anshul@anshulgarg.me">Feedback</a> | <a href="https://github.com/anshulg8">Source</a> | <a href="https://github.com/mmcgrana/gobyexample#license">License</a>
-	  </p>
-</div> -->
 
 </body>
 </html>
