@@ -1,0 +1,18 @@
+<div class="example" id="hello-world">
+  <h2><a href="./">Python by Example</a></h2>
+	<hr>
+	<h2><%= @post.title %></h2><br>
+	
+	<div id="content">
+		<%=  @post.content %>
+	</div>
+	
+	<br>
+	<%# if user_signed_in? %>
+		<div id="admin_links">
+			<%= link_to "Edit Article", edit_post_path(@post) %>
+			<%= link_to "Delete Article", post_path(@post), method: :delete, data: { confirm: "Are you sure?" } %>
+		</div>
+	<%# end %>
+
+</div>
