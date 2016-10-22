@@ -1,12 +1,14 @@
 <% provide(:title, @post.title) %>
-<div class="example" id="hello-world">
-  <h2><a href="./">Python by Example</a></h2>
-	<hr>
-	<h2><%= @post.title %></h2><br>
+<!-- <div id="intro"> -->
+<div class="example">
+  <h2><a href="/">Python by Example</a>: <%= @post.title %></h2>
+	<br>
 	
 	<div id="content">
 		<%= markdown @post.content %>
 	</div>
+<br>
+ <p>&lt; <a href="#">Previous Lesson</a> | <a href="#">Next Lesson</a> &gt;</p>	
 	
 	<br>
 	<%# if user_signed_in? %>
@@ -18,7 +20,7 @@
 	<br>
 
 	<p class="footer">
-    by <a href="https://twitter.com/AnshulG8">@AnshulG8</a> | <a href="https://anshulgarg.me/contact">Feedback</a> | <a href="https://github.com/anshulg8">Source</a> | <a href="https://github.com/mmcgrana/gobyexample#license">License</a>
+    <a href="https://twitter.com/AnshulG8" class="twitter-follow-button" data-show-count="false">Follow @AnshulG8</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> | <a href="https://anshulgarg.me/contact" target="_blank">Feedback</a> | <a href="https://github.com/anshulg8" target="_blank">Source</a> | <a href="#" target="_blank">License</a><br>
   </p>
 
 </div>
