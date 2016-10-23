@@ -1,26 +1,26 @@
 <% provide(:title, @post.title) %>
-<!-- <div id="intro"> -->
+
 <div class="example">
   <h2><a href="/">Python by Example</a>: <%= @post.title %></h2>
 	<br>
 	
 	<div id="content">
 		<%= markdown @post.content %>
-	</div>
-<br>
- <p>&lt; <a href="#">Previous Lesson</a> | <a href="#">Next Lesson</a> &gt;</p>	
-	
-	<br>
+	</div><br>
+
+ <p><%= link_to("< Previous Post", @post.previous) if @post.previous %>&nbsp; &nbsp;<%= link_to("Next Post >", @post.next) if @post.next %></p><br>
+
 	<% if user_signed_in? %>
 		<div id="admin_links">
 			<%= link_to "Edit Article", edit_post_path(@post) %>
 			<%= link_to "Delete Article", post_path(@post), method: :delete, data: { confirm: "Are you sure?" } %>
 		</div>
-	<% end %>
-	<br>
+	<% end %><br>
 
-	<p class="footer">
-    <a href="https://twitter.com/AnshulG8" class="twitter-follow-button" data-show-count="false">Follow @AnshulG8</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> | <a href="https://anshulgarg.me/contact" target="_blank">Feedback</a> | <a href="https://github.com/anshulg8" target="_blank">Source</a> | <a href="#" target="_blank">License</a><br>
+  <p class="footer">
+    <a href="https://anshulgarg.me/contact" target="_blank">Feedback</a> | <a href="https://github.com/anshulg8" target="_blank">Source</a> | <a href="#">License</a><br><br>
+
+    <a href="https://twitter.com/AnshulG8" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @AnshulG8</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
   </p>
 
 </div>
