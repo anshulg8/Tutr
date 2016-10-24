@@ -9,7 +9,7 @@
 	</div><br>
 
  <p><%= link_to("< Previous Post", @post.previous) if @post.previous %>&nbsp; &nbsp;<%= link_to("Next Post >", @post.next) if @post.next %></p><br>
-
+ 
 	<% if user_signed_in? %>
 		<div id="admin_links">
 			<%= link_to "Edit Article", edit_post_path(@post) %>

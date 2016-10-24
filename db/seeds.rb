@@ -19,5 +19,4 @@ To run the program, put the code in hello-world.py and type python hello-world.p
 
 **Screenshot**
 
-Now that we can run and build basic Python programs, let’s learn more about the language.
-Next example: Values.')
+Now that we can run and build basic Python programs, let’s learn more about the language.')
