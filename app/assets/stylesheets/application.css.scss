@@ -92,6 +92,12 @@ div.example a{
     text-decoration: none;
     }
 
+div.example img{
+    width: 500px;
+    min-width: 500px;
+    max-width: 500px;
+    }
+
 div.example table {
     margin-top: 15px;
     margin-bottom: 20px;
