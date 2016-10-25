@@ -181,5 +181,29 @@ input[type="submit"], .button {
     text-align: center;
 }
 
+@media only screen and (max-width: 450px) {
+    div.example {
+        width: 90%;
+        min-width: 90%;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 120px;
+    }
+    div#intro {
+        width: 90%;
+        min-width: 90%;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 120px;
+    }
+    div.example img {
+        width: 90%;
+        min-width: 90%;
+        max-width: 90%;
+    }
+}
+
 @import 'normalize';
 @import 'pygments';
